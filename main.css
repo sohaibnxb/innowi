@@ -5,6 +5,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10935,6 +10936,50 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-color: #F8F9FA;
+}
+
+.hero {
+  background-image: url("/images/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 375px;
+  position: relative;
+}
+.hero .restaurant-info {
+  max-width: 957px;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 1.5rem;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: -6rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero .restaurant-info .restaurant-image {
+  margin-top: -7rem;
+}
+.hero .restaurant-info h2, .hero .restaurant-info .h2 {
+  font-size: 2.125rem;
+  font-weight: 700;
+}
+.hero .restaurant-info .info-body {
+  margin-top: 2.75rem;
+  margin-bottom: 2rem;
+}
+.hero .restaurant-info .info-body label {
+  min-width: 7.6rem;
+  font-size: 1.5rem;
+  color: #6E757C;
+  margin-right: 0.625rem;
+}
+.hero .restaurant-info .info-body span {
+  font-size: 1.5rem;
+  color: #F27712;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -10984,22 +11029,63 @@ input {
   border-radius: 0;
 }
 
-header .search .form-control {
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+input {
+  font-size: 14px !important;
+}
+
+header .navbar {
+  background-color: #FFFFFF;
+}
+header .navbar .container {
+  max-width: 95%;
+}
+header .navbar .search .form-control {
+  background-color: #F8F9FA;
+  padding: 0.275rem 0.75rem;
   padding-left: 2.375rem;
 }
-header .search .form-control-feedback {
+header .navbar .search .form-control::-moz-placeholder {
+  color: #AEB5BC;
+}
+header .navbar .search .form-control:-ms-input-placeholder {
+  color: #AEB5BC;
+}
+header .navbar .search .form-control::placeholder {
+  color: #AEB5BC;
+}
+header .navbar .search .form-control:focus {
+  box-shadow: none;
+}
+header .navbar .search .form-control-feedback {
+  color: #AEB5BC;
   position: absolute;
   z-index: 2;
   display: block;
-  width: 2.375rem;
-  height: 2.375rem;
-  line-height: 2.375rem;
+  width: 1.975rem;
+  height: 1.975rem;
+  line-height: 1.975rem;
   text-align: center;
   pointer-events: none;
-  color: #aaa;
+}
+header .navbar .nav-details {
+  width: 80%;
+}
+@media (min-width: 360px) {
+  header .navbar .nav-details {
+    width: auto;
+  }
 }
 
 footer {
   background-color: #F27712;
   color: #FFFFFF;
+  margin-top: 20rem !important;
 }/*# sourceMappingURL=main.css.map */

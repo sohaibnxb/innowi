@@ -1,8 +1,9 @@
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+
 @import "base/variables";
+@import "base/base";
 @import "base/reset";
 @import "base/mixins";
 @import "base/typography";
 @import "layout/navbar";
 @import "layout/footer"
-

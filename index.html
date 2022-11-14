@@ -14,32 +14,66 @@
 
 <body>
     <header>
-        <nav class="navbar bg-light">
+        <nav class="navbar">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="images/secondcup-logo-23 1.png" alt="Bootstrap" width="30" height="24">
+                    <img src="images/secondcup-logo-23 1.png" alt="logo">
                 </a>
-                <!-- <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  </form> -->
-                <div class="nav-details d-flex">
+
+                <div class="nav-details d-flex align-items-center">
                     <div class="form-group search">
                         <span class="fa fa-search form-control-feedback"> </span>
                         <input type="text" class="form-control" placeholder="Search">
                     </div>
-                    <img class="ms-4" src="images/login.svg" alt="login">
+                    <a class="profile ms-4 d-inline-flex" href="#">
+                        <img src="images/login.svg" alt="login">
+                    </a>
                 </div>
         </nav>
     </header>
 
-    <footer class="d-flex justify-content-center align-items-center py-3">
+    <div class="hero text-center mx-auto py-5">
+        <div class="restaurant-info mx-auto px-5">
+            <div class="restaurant-image">
+                <img src="/images/restaurant-logo.png" alt="restaurants">
+            </div>
+            <h2 class="mt-2">Second Cup Coffee Co.</h2>
+            <div class="info-body text-start ">
+                <div class="row g-3 justify-content-between">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <label>Open hours</label>
+                            <span>Closed</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group text-xl-end">
+                            <label>Phone</label>
+                            <span>(222) 514-1111</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <label>Order Type</label>
+                            <span>Schedule for Later</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group text-xl-end">
+                            <label>Branch</label>
+                            <span contenteditable="">Huston,Texas USA</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex justify-content-center align-items-center  py-3 ">
         <!-- <p>2022</p> -->
-        <span>
-            <img class="me-2" src="images/innowi.svg" alt="brand">
-        </span>
-        <span>
-            <img class="me-2" src="images/copyright.svg" alt="copyright">
-        </span>
+        <img class="me-3 pb-1" src="images/innowi.svg" alt="brand">
+        <img class="me-3" src="images/copyright.svg" alt="copyright">
         <span>2022</span>
     </footer>
 </body>

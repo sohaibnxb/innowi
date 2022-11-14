@@ -1,17 +1,50 @@
-header{
-    .search .form-control {
-        padding-left: 2.375rem;
+header {
+
+    .navbar {
+        background-color: map-get($theme-colors, "white");
+        .container{
+            max-width: 95%;
+        }
+        // Search Bar
+        .search {
+            // search Input
+            .form-control {
+                background-color: map-get($theme-colors, "grey100");
+                padding: 0.275rem 0.75rem;
+                padding-left: 2.375rem;
+
+                &::placeholder {
+                    color: map-get($theme-colors, "grey400");
+                }
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            // Search Icon
+            .form-control-feedback {
+                color: map-get($theme-colors, "grey400");
+                position: absolute;
+                z-index: 2;
+                display: block;
+                width: 1.975rem;
+                height: 1.975rem;
+                line-height: 1.975rem;
+                text-align: center;
+                pointer-events: none;
+            }
+        }
+
+        // Control the width of search bar on small screen
+        .nav-details {
+            width: 80%;
+
+            @media (min-width:360px) {
+                width: auto;
+            }
+        }
     }
-    
-    .search .form-control-feedback {
-        position: absolute;
-        z-index: 2;
-        display: block;
-        width: 2.375rem;
-        height: 2.375rem;
-        line-height: 2.375rem;
-        text-align: center;
-        pointer-events: none;
-        color: #aaa;
-    }
+
+
+
 }
